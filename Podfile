@@ -6,5 +6,8 @@ target 'RoomySimpleProject' do
   use_frameworks!
 
   # Pods for RoomySimpleProject
+  pod 'Alamofire', '~> 5.1'
   pod 'DCAnimationKit'
+  pod 'NVActivityIndicatorView'
+  pod 'KeychainSwift'
 end

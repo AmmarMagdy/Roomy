@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05F4154245772F8006385ED /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F4153245772F8006385ED /* Router.swift */; };
+		A05F41562457730B006385ED /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F41552457730B006385ED /* Request.swift */; };
+		A05F415824578F31006385ED /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F415724578F31006385ED /* AuthAPI.swift */; };
+		A065CCE82458DEE400916971 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A065CCE62458DEE400916971 /* SignupViewController.swift */; };
+		A065CCE92458DEE400916971 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A065CCE72458DEE400916971 /* SignupViewController.xib */; };
+		A065CCED2458E94800916971 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A065CCEC2458E94700916971 /* UIViewController+Extensions.swift */; };
 		A067FF1D2418360B002CE725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF1C2418360B002CE725 /* AppDelegate.swift */; };
 		A067FF212418360B002CE725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF202418360B002CE725 /* ViewController.swift */; };
 		A067FF262418360E002CE725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A067FF252418360E002CE725 /* Assets.xcassets */; };
 		A067FF3624183B71002CE725 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF3424183B71002CE725 /* LandingViewController.swift */; };
 		A067FF3724183B71002CE725 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A067FF3524183B71002CE725 /* LandingViewController.xib */; };
-		A067FF3D24183E5E002CE725 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF3B24183E5E002CE725 /* SigninViewController.swift */; };
-		A067FF3E24183E5E002CE725 /* SigninViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A067FF3C24183E5E002CE725 /* SigninViewController.xib */; };
+		A067FF3D24183E5E002CE725 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF3B24183E5E002CE725 /* LoginViewController.swift */; };
+		A067FF3E24183E5E002CE725 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A067FF3C24183E5E002CE725 /* LoginViewController.xib */; };
 		A067FF48241847D6002CE725 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF46241847D6002CE725 /* HomeViewController.swift */; };
 		A067FF49241847D6002CE725 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A067FF47241847D6002CE725 /* HomeViewController.xib */; };
 		A067FF4D24184833002CE725 /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF4B24184833002CE725 /* HomeTableCell.swift */; };
 		A067FF4E24184833002CE725 /* HomeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A067FF4C24184833002CE725 /* HomeTableCell.xib */; };
-		A067FF5224184B33002CE725 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF5024184B33002CE725 /* ListingViewController.swift */; };
-		A067FF5324184B33002CE725 /* ListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A067FF5124184B33002CE725 /* ListingViewController.xib */; };
+		A067FF5224184B33002CE725 /* RoomDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF5024184B33002CE725 /* RoomDetailsViewController.swift */; };
+		A067FF5324184B33002CE725 /* RoomDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A067FF5124184B33002CE725 /* RoomDetailsViewController.xib */; };
+		A0BF7764245C782B005CE9BB /* RoomsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF7763245C782B005CE9BB /* RoomsAPI.swift */; };
+		A0BF7768245E0E12005CE9BB /* AddRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF7766245E0E12005CE9BB /* AddRoomsViewController.swift */; };
+		A0BF7769245E0E12005CE9BB /* AddRoomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BF7767245E0E12005CE9BB /* AddRoomsViewController.xib */; };
 		A0C1C5CF2418EA0D00BA07CE /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C1C5CD2418EA0D00BA07CE /* LaunchScreenViewController.swift */; };
 		A0C1C5D02418EA0D00BA07CE /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C1C5CE2418EA0D00BA07CE /* LaunchScreenViewController.xib */; };
 		A0C1C5D42418FDC400BA07CE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C1C5D32418FDC400BA07CE /* CustomView.swift */; };
@@ -30,6 +39,12 @@
 		07A38AF2FF6C51297C4BBBD9 /* Pods-RoomySimpleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomySimpleProject.release.xcconfig"; path = "Target Support Files/Pods-RoomySimpleProject/Pods-RoomySimpleProject.release.xcconfig"; sourceTree = "<group>"; };
 		7672FD8819AC42EA8CB66F0E /* Pods_RoomySimpleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoomySimpleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C4CC833F1A46246DD411E2 /* Pods-RoomySimpleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomySimpleProject.debug.xcconfig"; path = "Target Support Files/Pods-RoomySimpleProject/Pods-RoomySimpleProject.debug.xcconfig"; sourceTree = "<group>"; };
+		A05F4153245772F8006385ED /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A05F41552457730B006385ED /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		A05F415724578F31006385ED /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		A065CCE62458DEE400916971 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A065CCE72458DEE400916971 /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		A065CCEC2458E94700916971 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		A067FF192418360B002CE725 /* RoomySimpleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomySimpleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A067FF1C2418360B002CE725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A067FF202418360B002CE725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,14 +52,17 @@
 		A067FF2A2418360E002CE725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A067FF3424183B71002CE725 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		A067FF3524183B71002CE725 /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
-		A067FF3B24183E5E002CE725 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
-		A067FF3C24183E5E002CE725 /* SigninViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninViewController.xib; sourceTree = "<group>"; };
+		A067FF3B24183E5E002CE725 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A067FF3C24183E5E002CE725 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		A067FF46241847D6002CE725 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A067FF47241847D6002CE725 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A067FF4B24184833002CE725 /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
 		A067FF4C24184833002CE725 /* HomeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableCell.xib; sourceTree = "<group>"; };
-		A067FF5024184B33002CE725 /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
-		A067FF5124184B33002CE725 /* ListingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingViewController.xib; sourceTree = "<group>"; };
+		A067FF5024184B33002CE725 /* RoomDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsViewController.swift; sourceTree = "<group>"; };
+		A067FF5124184B33002CE725 /* RoomDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomDetailsViewController.xib; sourceTree = "<group>"; };
+		A0BF7763245C782B005CE9BB /* RoomsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsAPI.swift; sourceTree = "<group>"; };
+		A0BF7766245E0E12005CE9BB /* AddRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomsViewController.swift; sourceTree = "<group>"; };
+		A0BF7767245E0E12005CE9BB /* AddRoomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRoomsViewController.xib; sourceTree = "<group>"; };
 		A0C1C5CD2418EA0D00BA07CE /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		A0C1C5CE2418EA0D00BA07CE /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
 		A0C1C5D32418FDC400BA07CE /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomView.swift; path = RoomySimpleProject/CustomView.swift; sourceTree = SOURCE_ROOT; };
@@ -71,6 +89,71 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A05F414F24576CA3006385ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A05F415724578F31006385ED /* AuthAPI.swift */,
+				A0BF7763245C782B005CE9BB /* RoomsAPI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A05F415024576CAE006385ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A067FF4A2418480C002CE725 /* HomeTableCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A05F415124576CB6006385ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1C5CC2418E9BE00BA07CE /* LaunchScreen */,
+				A067FF3124183B3E002CE725 /* Landing */,
+				A067FF3824183E18002CE725 /* Login */,
+				A065CCE52458DEC400916971 /* Signup */,
+				A067FF3F24184769002CE725 /* Home */,
+				A0BF7765245E0DFB005CE9BB /* AddRooms */,
+				A067FF4F24184B1C002CE725 /* RoomDetails */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A05F4152245772E4006385ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A05F41552457730B006385ED /* Request.swift */,
+				A05F4153245772F8006385ED /* Router.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A065CCE52458DEC400916971 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				A065CCE62458DEE400916971 /* SignupViewController.swift */,
+				A065CCE72458DEE400916971 /* SignupViewController.xib */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		A065CCEA2458E94700916971 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A065CCEB2458E94700916971 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A065CCEB2458E94700916971 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A065CCEC2458E94700916971 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A067FF102418360B002CE725 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +175,11 @@
 		A067FF1B2418360B002CE725 /* RoomySimpleProject */ = {
 			isa = PBXGroup;
 			children = (
-				A067FF30241836A6002CE725 /* UI */,
+				A065CCEA2458E94700916971 /* Utilities */,
+				A05F4152245772E4006385ED /* Network */,
+				A05F414F24576CA3006385ED /* Models */,
+				A05F415024576CAE006385ED /* Views */,
+				A05F415124576CB6006385ED /* Controllers */,
 				A0C1C5D12418FDA300BA07CE /* Utilis */,
 				A067FF1C2418360B002CE725 /* AppDelegate.swift */,
 				A067FF202418360B002CE725 /* ViewController.swift */,
@@ -102,92 +189,31 @@
 			path = RoomySimpleProject;
 			sourceTree = "<group>";
 		};
-		A067FF30241836A6002CE725 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				A0C1C5CC2418E9BE00BA07CE /* LaunchScreen */,
-				A067FF3124183B3E002CE725 /* Landing */,
-				A067FF3824183E18002CE725 /* Signin */,
-				A067FF3F24184769002CE725 /* Home */,
-				A067FF4F24184B1C002CE725 /* Listing  */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		A067FF3124183B3E002CE725 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				A067FF3224183B49002CE725 /* Controller */,
-				A067FF3324183B57002CE725 /* View */,
+				A067FF3424183B71002CE725 /* LandingViewController.swift */,
+				A067FF3524183B71002CE725 /* LandingViewController.xib */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
 		};
-		A067FF3224183B49002CE725 /* Controller */ = {
+		A067FF3824183E18002CE725 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				A067FF3424183B71002CE725 /* LandingViewController.swift */,
+				A067FF3B24183E5E002CE725 /* LoginViewController.swift */,
+				A067FF3C24183E5E002CE725 /* LoginViewController.xib */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		A067FF3324183B57002CE725 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A067FF3524183B71002CE725 /* LandingViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A067FF3824183E18002CE725 /* Signin */ = {
-			isa = PBXGroup;
-			children = (
-				A067FF3A24183E43002CE725 /* Controller */,
-				A067FF3924183E3D002CE725 /* View */,
-			);
-			path = Signin;
-			sourceTree = "<group>";
-		};
-		A067FF3924183E3D002CE725 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A067FF3C24183E5E002CE725 /* SigninViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A067FF3A24183E43002CE725 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A067FF3B24183E5E002CE725 /* SigninViewController.swift */,
-			);
-			path = Controller;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		A067FF3F24184769002CE725 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A067FF442418479D002CE725 /* Controller */,
-				A067FF45241847A6002CE725 /* View */,
+				A067FF46241847D6002CE725 /* HomeViewController.swift */,
+				A067FF47241847D6002CE725 /* HomeViewController.xib */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		A067FF442418479D002CE725 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A067FF46241847D6002CE725 /* HomeViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		A067FF45241847A6002CE725 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A067FF47241847D6002CE725 /* HomeViewController.xib */,
-				A067FF4A2418480C002CE725 /* HomeTableCell */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A067FF4A2418480C002CE725 /* HomeTableCell */ = {
@@ -199,29 +225,22 @@
 			path = HomeTableCell;
 			sourceTree = "<group>";
 		};
-		A067FF4F24184B1C002CE725 /* Listing  */ = {
+		A067FF4F24184B1C002CE725 /* RoomDetails */ = {
 			isa = PBXGroup;
 			children = (
-				A067FF5424184B3B002CE725 /* Controller */,
-				A067FF5524184B43002CE725 /* View */,
+				A067FF5024184B33002CE725 /* RoomDetailsViewController.swift */,
+				A067FF5124184B33002CE725 /* RoomDetailsViewController.xib */,
 			);
-			path = "Listing ";
+			path = RoomDetails;
 			sourceTree = "<group>";
 		};
-		A067FF5424184B3B002CE725 /* Controller */ = {
+		A0BF7765245E0DFB005CE9BB /* AddRooms */ = {
 			isa = PBXGroup;
 			children = (
-				A067FF5024184B33002CE725 /* ListingViewController.swift */,
+				A0BF7766245E0E12005CE9BB /* AddRoomsViewController.swift */,
+				A0BF7767245E0E12005CE9BB /* AddRoomsViewController.xib */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		A067FF5524184B43002CE725 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A067FF5124184B33002CE725 /* ListingViewController.xib */,
-			);
-			path = View;
+			path = AddRooms;
 			sourceTree = "<group>";
 		};
 		A0C1C5CC2418E9BE00BA07CE /* LaunchScreen */ = {
@@ -309,12 +328,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A067FF3E24183E5E002CE725 /* SigninViewController.xib in Resources */,
+				A0BF7769245E0E12005CE9BB /* AddRoomsViewController.xib in Resources */,
+				A067FF3E24183E5E002CE725 /* LoginViewController.xib in Resources */,
 				A0C1C5D02418EA0D00BA07CE /* LaunchScreenViewController.xib in Resources */,
 				A067FF3724183B71002CE725 /* LandingViewController.xib in Resources */,
 				A067FF49241847D6002CE725 /* HomeViewController.xib in Resources */,
-				A067FF5324184B33002CE725 /* ListingViewController.xib in Resources */,
+				A067FF5324184B33002CE725 /* RoomDetailsViewController.xib in Resources */,
 				A067FF262418360E002CE725 /* Assets.xcassets in Resources */,
+				A065CCE92458DEE400916971 /* SignupViewController.xib in Resources */,
 				A067FF4E24184833002CE725 /* HomeTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,14 +390,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A067FF48241847D6002CE725 /* HomeViewController.swift in Sources */,
-				A067FF3D24183E5E002CE725 /* SigninViewController.swift in Sources */,
+				A0BF7764245C782B005CE9BB /* RoomsAPI.swift in Sources */,
+				A067FF3D24183E5E002CE725 /* LoginViewController.swift in Sources */,
+				A05F4154245772F8006385ED /* Router.swift in Sources */,
 				A0C1C5CF2418EA0D00BA07CE /* LaunchScreenViewController.swift in Sources */,
+				A05F415824578F31006385ED /* AuthAPI.swift in Sources */,
+				A05F41562457730B006385ED /* Request.swift in Sources */,
 				A0C1C5D42418FDC400BA07CE /* CustomView.swift in Sources */,
 				A067FF212418360B002CE725 /* ViewController.swift in Sources */,
 				A067FF3624183B71002CE725 /* LandingViewController.swift in Sources */,
-				A067FF5224184B33002CE725 /* ListingViewController.swift in Sources */,
+				A065CCE82458DEE400916971 /* SignupViewController.swift in Sources */,
+				A065CCED2458E94800916971 /* UIViewController+Extensions.swift in Sources */,
+				A067FF5224184B33002CE725 /* RoomDetailsViewController.swift in Sources */,
 				A067FF1D2418360B002CE725 /* AppDelegate.swift in Sources */,
 				A067FF4D24184833002CE725 /* HomeTableCell.swift in Sources */,
+				A0BF7768245E0E12005CE9BB /* AddRoomsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RoomySimpleProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,7 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RoomySimpleProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

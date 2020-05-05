@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.1.0)
+  - DCAnimationKit (0.0.6)
+  - KeychainSwift (19.0.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - DCAnimationKit
+  - KeychainSwift
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DCAnimationKit
+    - KeychainSwift
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  DCAnimationKit: 7133bef877ce1aa113dcfeea1380ca67f91f7608
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+
+PODFILE CHECKSUM: 36ab27bc86e2f011d4b62903bf1596934978c6ff
+
+COCOAPODS: 1.9.0

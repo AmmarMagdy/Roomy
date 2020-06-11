@@ -6,7 +6,7 @@
 //  Copyright © 2020 Ammar.M. All rights reserved.
 //
 
-import Foundation
+import KeychainSwift
 import Alamofire
 
 enum Router: URLRequestConvertible {
@@ -39,7 +39,7 @@ enum Router: URLRequestConvertible {
     var header: HTTPHeaders {
         switch self {
         case .addRoom,.getAllRooms:
-           return [HTTPHeader(name: "Authorization", value: UserDefaults.standard.string(forKey: "token")!)]
+            return [HTTPHeader(name: "Authorization", value: KeychainSwift().get("auth_token") ?? "")]
         default:
             return [:]
         }

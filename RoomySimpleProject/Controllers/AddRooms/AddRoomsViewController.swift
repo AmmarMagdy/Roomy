@@ -57,8 +57,7 @@ extension AddRoomsViewController {
                         self.present(alert, animated: true)
                     }
                 case.failure(let error):
-                    self.showAlert(title: "Error", message: error.localizedDescription)
-                    
+                    Alert.shared.showAlert(title: "Error", message: error.localizedDescription)
                 }
             }
         }

@@ -7,6 +7,7 @@
 //
 
 import NVActivityIndicatorView
+import KeychainSwift
 
 class HomeViewController: UIViewController, NVActivityIndicatorViewable {
     
@@ -18,8 +19,18 @@ class HomeViewController: UIViewController, NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRoom))
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logout))
+        
         navigationItem.title = "Home"
         tableView.register(UINib(nibName: "HomeTableCell", bundle: nil), forCellReuseIdentifier: homeCellIdentifier)
+    }
+    
+    @objc func logout() {
+        KeychainSwift().delete("auth_token")
+        let navigationController = UINavigationController(rootViewController: LandingViewController())
+        navigationController.isNavigationBarHidden = true
+        UIApplication.shared.keyWindow?.rootViewController = navigationController
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -89,8 +100,7 @@ extension HomeViewController {
                     print(error)
                 }
             case.failure(let error):
-                self.showAlert(title: "Error", message: error.localizedDescription)
-                
+                Alert.shared.showAlert(title: "Error", message: error.localizedDescription)
             }
         }
     }

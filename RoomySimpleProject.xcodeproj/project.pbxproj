@@ -26,12 +26,14 @@
 		A067FF4E24184833002CE725 /* HomeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A067FF4C24184833002CE725 /* HomeTableCell.xib */; };
 		A067FF5224184B33002CE725 /* RoomDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067FF5024184B33002CE725 /* RoomDetailsViewController.swift */; };
 		A067FF5324184B33002CE725 /* RoomDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A067FF5124184B33002CE725 /* RoomDetailsViewController.xib */; };
+		A06A3DCE248BECDC00BA24F5 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06A3DCD248BECDC00BA24F5 /* LoginPresenter.swift */; };
 		A0BF7764245C782B005CE9BB /* RoomsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF7763245C782B005CE9BB /* RoomsAPI.swift */; };
 		A0BF7768245E0E12005CE9BB /* AddRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF7766245E0E12005CE9BB /* AddRoomsViewController.swift */; };
 		A0BF7769245E0E12005CE9BB /* AddRoomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BF7767245E0E12005CE9BB /* AddRoomsViewController.xib */; };
 		A0C1C5CF2418EA0D00BA07CE /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C1C5CD2418EA0D00BA07CE /* LaunchScreenViewController.swift */; };
 		A0C1C5D02418EA0D00BA07CE /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C1C5CE2418EA0D00BA07CE /* LaunchScreenViewController.xib */; };
 		A0C1C5D42418FDC400BA07CE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C1C5D32418FDC400BA07CE /* CustomView.swift */; };
+		A0EFEC0C24920257009D74E7 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EFEC0B24920257009D74E7 /* Alert.swift */; };
 		C9A9EB26D436619173EA8963 /* Pods_RoomySimpleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7672FD8819AC42EA8CB66F0E /* Pods_RoomySimpleProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,12 +62,14 @@
 		A067FF4C24184833002CE725 /* HomeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableCell.xib; sourceTree = "<group>"; };
 		A067FF5024184B33002CE725 /* RoomDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsViewController.swift; sourceTree = "<group>"; };
 		A067FF5124184B33002CE725 /* RoomDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomDetailsViewController.xib; sourceTree = "<group>"; };
+		A06A3DCD248BECDC00BA24F5 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		A0BF7763245C782B005CE9BB /* RoomsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsAPI.swift; sourceTree = "<group>"; };
 		A0BF7766245E0E12005CE9BB /* AddRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomsViewController.swift; sourceTree = "<group>"; };
 		A0BF7767245E0E12005CE9BB /* AddRoomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRoomsViewController.xib; sourceTree = "<group>"; };
 		A0C1C5CD2418EA0D00BA07CE /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		A0C1C5CE2418EA0D00BA07CE /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
-		A0C1C5D32418FDC400BA07CE /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomView.swift; path = RoomySimpleProject/CustomView.swift; sourceTree = SOURCE_ROOT; };
+		A0C1C5D32418FDC400BA07CE /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomView.swift; path = RoomySimpleProject/Utilities/CustomView.swift; sourceTree = SOURCE_ROOT; };
+		A0EFEC0B24920257009D74E7 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 		A065CCEA2458E94700916971 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1C5D32418FDC400BA07CE /* CustomView.swift */,
+				A0EFEC0B24920257009D74E7 /* Alert.swift */,
 				A065CCEB2458E94700916971 /* Extensions */,
 			);
 			path = Utilities;
@@ -180,7 +186,6 @@
 				A05F414F24576CA3006385ED /* Models */,
 				A05F415024576CAE006385ED /* Views */,
 				A05F415124576CB6006385ED /* Controllers */,
-				A0C1C5D12418FDA300BA07CE /* Utilis */,
 				A067FF1C2418360B002CE725 /* AppDelegate.swift */,
 				A067FF202418360B002CE725 /* ViewController.swift */,
 				A067FF252418360E002CE725 /* Assets.xcassets */,
@@ -202,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				A067FF3B24183E5E002CE725 /* LoginViewController.swift */,
+				A06A3DCD248BECDC00BA24F5 /* LoginPresenter.swift */,
 				A067FF3C24183E5E002CE725 /* LoginViewController.xib */,
 			);
 			path = Login;
@@ -250,14 +256,6 @@
 				A0C1C5CE2418EA0D00BA07CE /* LaunchScreenViewController.xib */,
 			);
 			path = LaunchScreen;
-			sourceTree = "<group>";
-		};
-		A0C1C5D12418FDA300BA07CE /* Utilis */ = {
-			isa = PBXGroup;
-			children = (
-				A0C1C5D32418FDC400BA07CE /* CustomView.swift */,
-			);
-			path = Utilis;
 			sourceTree = "<group>";
 		};
 		C08359844793B7ADE2C3A5BA /* Frameworks */ = {
@@ -389,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0EFEC0C24920257009D74E7 /* Alert.swift in Sources */,
 				A067FF48241847D6002CE725 /* HomeViewController.swift in Sources */,
 				A0BF7764245C782B005CE9BB /* RoomsAPI.swift in Sources */,
 				A067FF3D24183E5E002CE725 /* LoginViewController.swift in Sources */,
@@ -398,6 +397,7 @@
 				A05F41562457730B006385ED /* Request.swift in Sources */,
 				A0C1C5D42418FDC400BA07CE /* CustomView.swift in Sources */,
 				A067FF212418360B002CE725 /* ViewController.swift in Sources */,
+				A06A3DCE248BECDC00BA24F5 /* LoginPresenter.swift in Sources */,
 				A067FF3624183B71002CE725 /* LandingViewController.swift in Sources */,
 				A065CCE82458DEE400916971 /* SignupViewController.swift in Sources */,
 				A065CCED2458E94800916971 /* UIViewController+Extensions.swift in Sources */,

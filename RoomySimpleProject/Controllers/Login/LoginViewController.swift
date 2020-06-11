@@ -8,7 +8,6 @@
 
 import UIKit
 import NVActivityIndicatorView
-import KeychainSwift
 
 class LoginViewController: UIViewController, NVActivityIndicatorViewable {
     
@@ -17,19 +16,23 @@ class LoginViewController: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var signinBtn: UIButton!
     @IBOutlet var socialViews: [CustomView]!
     
-    private var loginAPI: AuthAPI!
-
+    var loginPresenter: LoginPresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loginPresenter = LoginPresenterImpl(view: self)
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         setupView()
     }
-    @IBAction func goToHomePage(_ sender: Any) {
-        login()
+    
+    @IBAction func goToHomePage(_ sender: UIButton) {
+        self.startAnimating()
+        loginPresenter?.login(emailTextField.text!, passwordTextField.text!)
     }
+    
     @IBAction func goToSignupPage(_ sender: Any) {
         self.navigationController?.pushViewController(SignupViewController(), animated: true)
     }
@@ -43,31 +46,15 @@ extension LoginViewController {
         signinBtn.layer.cornerRadius = signinBtn.bounds.height / 2
     }
 }
-extension LoginViewController {
-    private func login() {
-        if !emailTextField.text!.isEmpty &&
-            !passwordTextField.text!.isEmpty {
-            startAnimating()
-            Request.requestAPI(router: Router.login(emailTextField.text!, passwordTextField.text!)) { [unowned self](response, _) in
-                self.stopAnimating()
-                switch response {
-                case .success(let result):
-                    do {
-                        self.loginAPI = try JSONDecoder().decode(AuthAPI.self, from: result)
-                        if let _ = self.loginAPI.authToken {
-                            KeychainSwift().set(self.loginAPI.authToken!, forKey: "auth_token")
-                        }
-                        self.navigationController?.pushViewController(HomeViewController(), animated: true)
-                    } catch let error {
-                        // Can't parse posts
-                        print(error)
-                    }
-                case.failure(let error):
-                    self.showAlert(title: "Error", message: error.localizedDescription)
-                    
-                }
-            }
-        }
-        
+
+//extension LoginViewController {
+//    private func login() {
+//      
+//}
+
+extension LoginViewController: LoginView {
+    func navigateToHome() {
+        self.stopAnimating()
+        self.navigationController?.pushViewController(HomeViewController(), animated: true)
     }
 }
